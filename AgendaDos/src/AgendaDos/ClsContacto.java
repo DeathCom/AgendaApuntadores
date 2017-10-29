@@ -5,8 +5,10 @@ public class ClsContacto {
     private String nombre;
     private String apellido;
     private String telefono;
+    private ClsContacto anterior;
+    private ClsContacto siguiente;
 
-    
+        
     
     public String getNombre() {
         return nombre;
@@ -30,6 +32,22 @@ public class ClsContacto {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+    
+    public ClsContacto getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(ClsContacto anterior) {
+        this.anterior = anterior;
+    }
+
+    public ClsContacto getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(ClsContacto siguiente) {
+        this.siguiente = siguiente;
     }
     
 }
