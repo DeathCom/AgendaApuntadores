@@ -5,16 +5,20 @@ import javax.swing.JOptionPane;
 
 public class FrmAgenda extends javax.swing.JFrame {
     ClsDatos temDatos = new ClsDatos();
+    /*primero declaramos un objeto del tipo que contenga las rutinas 
+    en este caso de tipo ClsDatos.*/
     
     public FrmAgenda() {
         initComponents();
     }
-    
+    /*Creamos un metodo para llenar los campos el cual llamaremos imprimir
+    este recibe un parametro de tipo(ontacto c)*/
     public void imprimir(ClsContacto ob){
         txt_Nombre.setText(ob.getNombre());
         txt_Apellido.setText(ob.getApellido());
         txt_Telefono.setText(ob.getTelefono());
     }
+    /*Creamos un metodo para limpieza llamado limpiar que no reciba parametro*/
     public void limpiar(){
         txt_Nombre.setText("");
         txt_Apellido.setText("");
@@ -186,10 +190,6 @@ public class FrmAgenda extends javax.swing.JFrame {
              limpiar();
          }
     }//GEN-LAST:event_Btn_GuardarActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
